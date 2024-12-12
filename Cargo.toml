@@ -1,0 +1,20 @@
+[package]
+name = "rudis"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# tokio features: 多线程异步运行时、宏、network
+tokio = { version = "1.42.0", features = ["rt", "rt-multi-thread", "macros", "net", "io-util"] }
+# error handle
+anyhow = "1.0.94"
+# logger
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter", "local-time"] }
+time = { version = "0.3.37", features = ["macros"] }
+# bytes 操作
+bytes = "1.9.0"
+# number to string
+itoa = "1.0.14"
+
